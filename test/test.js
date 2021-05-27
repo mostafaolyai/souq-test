@@ -29,12 +29,12 @@ describe('Post Coupon', () => {
     it('Coupon Not Found!', async () => {
       const res = await request(app)
         .get('/api/coupon?productId=12&price=2000&code=souq4&userId=5')
-        .expect(400);
+        .expect(404);
     })
 
     it('Product Not Found!', async () => {
       const res = await request(app)
         .get('/api/coupon?productId=1200&price=2000&code=souq3&userId=5')
-        .expect(400);
+        .expect(404);
     })
   })
