@@ -5,36 +5,36 @@ const Category = db.category;
 const Op = db.Sequelize.Op;
 
 exports.checkOff=async (req, res) =>{
-    if(!req.body.productId){
+    if(!req.query.productId){
         res.status(400).send({
             message: 'productId is empty!'
         });
         return;
     }
     
-    if(!req.body.price){
+    if(!req.query.price){
         res.status(400).send({
             message: 'price is empty!'
         });
         return;
     }
 
-    if(!req.body.code){
+    if(!req.query.code){
         res.status(400).send({
             message: 'code is empty!'
         });
         return;
     }
 
-    if(!req.body.userId){
+    if(!req.query.userId){
         res.status(400).send({
             message: 'userId is empty!'
         });
         return;
     }
 
-    const productId = Number(req.body.productId);
-    const code = req.body.code.toLowerCase();
+    const productId = Number(req.query.productId);
+    const code = req.query.code.toLowerCase();
     var condition = code ? { code: { [Op.iLike]: `%${code}%` } } : null;
 
     const coupon = await Coupon.findOne({where : condition})
@@ -83,6 +83,6 @@ exports.checkOff=async (req, res) =>{
     }
 
     res.status(200).send({
-        message :`User ${req.body.userId} Recieved ${~~((Number(req.body.price)*coupon.percent)/100)} Off For ${myProduct.name}`,
+        message :`User ${req.query.userId} Recieved ${~~((Number(req.query.price)*coupon.percent)/100)} Off For ${myProduct.name}`,
     })
 }
