@@ -29,7 +29,8 @@
 <br/>
 
 <h3>تمامی جداول موجود رو مقدار دهی کردم که در ادمه تصویرشو قرار میدم</h3>
-![image](https://user-images.githubusercontent.com/19631319/119871122-64316f80-bf37-11eb-8191-bb73b3816586.png)
+<image src="https://user-images.githubusercontent.com/19631319/119871122-64316f80-bf37-11eb-8191-bb73b3816586.png"/>
+![image]()
 
 </br>
 ![image](https://user-images.githubusercontent.com/19631319/119871327-93e07780-bf37-11eb-92a4-d7b572743ac1.png)
