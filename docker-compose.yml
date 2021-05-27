@@ -1,0 +1,33 @@
+version: '3.5'
+
+services:
+  postgres:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: mostafa
+      POSTGRES_PASSWORD: olyai8082
+      POSTGRES_DB: testdb
+    ports:
+      - 5432:5432
+    networks:
+      - postgres-net
+    restart: unless-stopped
+  
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: amarali2008@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: olyai8082
+    ports:
+      - 8085:80
+    networks:
+      - postgres-net
+    restart: unless-stopped
+    depends_on:
+      - postgres
+
+networks:
+  postgres-net:
+    driver: bridge

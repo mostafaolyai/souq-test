@@ -1,0 +1,37 @@
+{
+  "name": "souq-test",
+  "version": "1.0.0",
+  "description": "This Is Test Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mostafaolyai/souq-test.git"
+  },
+  "author": "mostafa olyai <amarali2008@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mostafaolyai/souq-test/issues"
+  },
+  "homepage": "https://github.com/mostafaolyai/souq-test#readme",
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+},
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "jest": "^27.0.1",
+    "supertest": "^6.1.3"
+  }
+}
