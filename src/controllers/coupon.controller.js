@@ -69,15 +69,13 @@ exports.checkOff=async (req, res) =>{
 
     if(!coupon.categoryId && coupon.productId!==productId){
         res.status(400).send({
-            message: `Coupon isn't for ${myProduct.name}`,
-            coupon
+            message: `Coupon isn't for ${myProduct.name}`
         });
         return;
     }
     else if(!coupon.productId && coupon.categoryId!==myProduct.categoryId){
         res.status(400).send({
-            message:`Coupon isn't for ${myCategory.name}`,
-            coupon
+            message:`Coupon isn't for ${myCategory.name}`
         });
         return;
     }
