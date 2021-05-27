@@ -30,12 +30,11 @@
 
 <h3>تمامی جداول موجود رو مقدار دهی کردم که در ادمه تصویرشو قرار میدم</h3>
 <image src="https://user-images.githubusercontent.com/19631319/119871122-64316f80-bf37-11eb-8191-bb73b3816586.png"/>
-![image]()
 
 </br>
-![image](https://user-images.githubusercontent.com/19631319/119871327-93e07780-bf37-11eb-92a4-d7b572743ac1.png)
-</br>
-![image](https://user-images.githubusercontent.com/19631319/119871404-a8247480-bf37-11eb-81d2-38cb55b9ae2a.png)
+
+<image src="https://user-images.githubusercontent.com/19631319/119871327-93e07780-bf37-11eb-92a4-d7b572743ac1.png"/>
+
 </br>
 
 </div>
@@ -43,4 +42,23 @@
 
 
 
+</div>
+<image src="https://user-images.githubusercontent.com/19631319/119871404-a8247480-bf37-11eb-81d2-38cb55b9ae2a.png"/>
+
+</br>
+
+<h3>پکیج های استفاده شده</h3>
+  <code>"dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "jest": "^27.0.1",
+    "supertest": "^6.1.3"
+  }
+  </code>
 </div>
